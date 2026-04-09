@@ -41,13 +41,13 @@ document.addEventListener("DOMContentLoaded", () => {
           .from('.block-reveal', { y: 30, opacity: 0, duration: 0.6, stagger: 0.1, ease: "power2.out" }, "-=0.5")
           .from('.hero-img', { scale: 0.9, opacity: 0, filter: "blur(10px)", duration: 1, ease: "power3.out" }, "-=0.6");
 
-    // 3. Reusable ScrollTrigger function to prevent empty sections
+    // 3. Reusable ScrollTrigger function
     const animateSection = (triggerClass, yOffset) => {
         gsap.from(triggerClass, {
             scrollTrigger: {
                 trigger: triggerClass,
-                start: "top 85%", // Triggers when top of element hits 85% of viewport
-                toggleActions: "play none none none" // Plays once
+                start: "top 85%",
+                toggleActions: "play none none none"
             },
             y: yOffset,
             opacity: 0,

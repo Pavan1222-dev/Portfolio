@@ -69,8 +69,7 @@
             </div>
             <div class="flex-1 flex justify-center md:justify-end hero-img">
                 <div class="relative w-72 h-72 md:w-96 md:h-96 rounded-none border border-cyber-green p-2 cyber-box-shadow group bg-cyber-panel">
-                    <img src="./img.png" onerror="this.src='https://kommodo.ai/i/gJWkOIO9lTfFQgo07dBG'" alt="Profile" class="w-full h-full object-cover grayscale opacity-80 transition-all duration-500 group-hover:grayscale-0 group-hover:opacity-100 mix-blend-screen">
-                    
+                    <img src="./portfolio/img.png" onerror="this.src='https://kommodo.ai/i/gJWkOIO9lTfFQgo07dBG'" alt="Profile" class="w-full h-full object-cover grayscale opacity-80 transition-all duration-500 group-hover:grayscale-0 group-hover:opacity-100 mix-blend-screen">
                     <div class="absolute -top-2 -left-2 w-4 h-4 border-t-2 border-l-2 border-cyber-cyan"></div>
                     <div class="absolute -top-2 -right-2 w-4 h-4 border-t-2 border-r-2 border-cyber-cyan"></div>
                     <div class="absolute -bottom-2 -left-2 w-4 h-4 border-b-2 border-l-2 border-cyber-cyan"></div>
@@ -92,13 +91,13 @@
                     <div class="w-3 h-3 rounded-full bg-green-500 mr-4"></div>
                     <span class="font-mono text-sm text-gray-500">root@ppk-sys:~# cat about.txt</span>
                 </div>
-                <p class="text-gray-400 leading-relaxed font-mono text-sm md:text-base">
-                    > STATUS: Online <br><br>
-                    > I am a passionate developer who treats software engineering as an art form. My expertise spans building comprehensive architectures using the MERN stack and Django, coupled with a deep interest in cybersecurity and malware removal.<br><br>
-                    > I thrive in terminal environments, optimizing SQL databases, integrating RESTful APIs, and designing UIs that adhere to modern UX standards. Whether I'm building a Collaborative IDE with 0.2ms latency or simulating real-world booking queues, my goal is always performance and precision.<br><br>
-                    > CURRENT_LOCATION: Visakhapatnam, India.<br>
-                    > EDUCATION: B.Tech, Computer Science Engineering (2022-2026).
-                </p>
+                <ul class="text-gray-400 leading-relaxed font-mono text-sm md:text-base space-y-4">
+                    <li class="flex items-start"><span class="text-cyber-green mr-3">></span> <span>Final-year Computer Science Engineering student with a passion for scalable web architecture and system security.</span></li>
+                    <li class="flex items-start"><span class="text-cyber-green mr-3">></span> <span>Full-stack expertise utilizing MERN and Django frameworks to build responsive, high-performance web applications.</span></li>
+                    <li class="flex items-start"><span class="text-cyber-green mr-3">></span> <span>Strong foundation in developing secure RESTful APIs, optimizing relational/NoSQL databases, and adhering to modern UX standards.</span></li>
+                    <li class="flex items-start"><span class="text-cyber-green mr-3">></span> <span>Proven track record in malware removal, SQL injection mitigation, and configuring secure cloud deployments (AWS).</span></li>
+                    <li class="flex items-start"><span class="text-cyber-green mr-3">></span> <span>Collaborative team leader experienced in driving complex technical projects from conceptualization to delivery with precision.</span></li>
+                </ul>
             </div>
         </div>
     </section>
@@ -112,37 +111,130 @@
                 
                 <div class="bg-cyber-panel border border-cyber-border p-8 cyber-card hover:border-cyber-cyan transition-colors">
                     <i class="fas fa-terminal text-3xl text-cyber-cyan mb-6"></i>
-                    <h3 class="text-xl font-bold text-white mb-4 font-mono">Languages</h3>
-                    <div class="flex flex-wrap gap-2 font-mono text-xs text-cyber-green">
-                        <span class="px-2 py-1 bg-cyber-green/10 border border-cyber-green/30">Python</span>
-                        <span class="px-2 py-1 bg-cyber-green/10 border border-cyber-green/30">C++</span>
-                        <span class="px-2 py-1 bg-cyber-green/10 border border-cyber-green/30">JavaScript</span>
-                        <span class="px-2 py-1 bg-cyber-green/10 border border-cyber-green/30">SQL</span>
-                        <span class="px-2 py-1 bg-cyber-green/10 border border-cyber-green/30">PHP</span>
-                        <span class="px-2 py-1 bg-cyber-green/10 border border-cyber-green/30">Bash</span>
+                    <h3 class="text-xl font-bold text-white mb-6 font-mono">Languages</h3>
+                    <div class="flex flex-wrap gap-4 font-mono text-xs text-cyber-green">
+                        
+                        <div class="relative group cursor-pointer">
+                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover:scale-110 group-hover:bg-cyber-green group-hover:text-black">Python</span>
+                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-2 bg-cyber-bg border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
+                                Django, Data Processing, Scripting
+                            </div>
+                        </div>
+
+                        <div class="relative group cursor-pointer">
+                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover:scale-110 group-hover:bg-cyber-green group-hover:text-black">C++</span>
+                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-2 bg-cyber-bg border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
+                                OOPs, Data Structures, Algorithms
+                            </div>
+                        </div>
+
+                        <div class="relative group cursor-pointer">
+                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover:scale-110 group-hover:bg-cyber-green group-hover:text-black">JavaScript</span>
+                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-2 bg-cyber-bg border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
+                                React.js, Express.js, DOM Manipulation
+                            </div>
+                        </div>
+
+                        <div class="relative group cursor-pointer">
+                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover:scale-110 group-hover:bg-cyber-green group-hover:text-black">SQL</span>
+                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-2 bg-cyber-bg border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
+                                Relational DBs, Complex Queries
+                            </div>
+                        </div>
+
+                        <div class="relative group cursor-pointer">
+                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover:scale-110 group-hover:bg-cyber-green group-hover:text-black">PHP</span>
+                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-2 bg-cyber-bg border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
+                                Server Scripting, WordPress Backend
+                            </div>
+                        </div>
+
+                        <div class="relative group cursor-pointer">
+                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover:scale-110 group-hover:bg-cyber-green group-hover:text-black">Bash</span>
+                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-2 bg-cyber-bg border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
+                                Linux CLI, Automation, Scripting
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
                 <div class="bg-cyber-panel border border-cyber-border p-8 cyber-card hover:border-cyber-cyan transition-colors">
                     <i class="fas fa-network-wired text-3xl text-cyber-cyan mb-6"></i>
-                    <h3 class="text-xl font-bold text-white mb-4 font-mono">Frameworks</h3>
-                    <div class="flex flex-wrap gap-2 font-mono text-xs text-cyber-green">
-                        <span class="px-2 py-1 bg-cyber-green/10 border border-cyber-green/30">MERN Stack</span>
-                        <span class="px-2 py-1 bg-cyber-green/10 border border-cyber-green/30">Django</span>
-                        <span class="px-2 py-1 bg-cyber-green/10 border border-cyber-green/30">Electron.js</span>
-                        <span class="px-2 py-1 bg-cyber-green/10 border border-cyber-green/30">WordPress</span>
+                    <h3 class="text-xl font-bold text-white mb-6 font-mono">Frameworks</h3>
+                    <div class="flex flex-wrap gap-4 font-mono text-xs text-cyber-green">
+                        
+                        <div class="relative group cursor-pointer">
+                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover:scale-110 group-hover:bg-cyber-green group-hover:text-black">MERN Stack</span>
+                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-2 bg-cyber-bg border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
+                                MongoDB, Express, React, Node.js
+                            </div>
+                        </div>
+
+                        <div class="relative group cursor-pointer">
+                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover:scale-110 group-hover:bg-cyber-green group-hover:text-black">Django</span>
+                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-2 bg-cyber-bg border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
+                                Python Web Dev, ORM, Secure Views
+                            </div>
+                        </div>
+
+                        <div class="relative group cursor-pointer">
+                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover:scale-110 group-hover:bg-cyber-green group-hover:text-black">Electron.js</span>
+                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-2 bg-cyber-bg border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
+                                Cross-Platform Desktop Apps
+                            </div>
+                        </div>
+
+                        <div class="relative group cursor-pointer">
+                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover:scale-110 group-hover:bg-cyber-green group-hover:text-black">WordPress</span>
+                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-2 bg-cyber-bg border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
+                                CMS, Malware Removal, Security
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
                 <div class="bg-cyber-panel border border-cyber-border p-8 cyber-card hover:border-cyber-cyan transition-colors">
                     <i class="fas fa-shield-alt text-3xl text-cyber-cyan mb-6"></i>
-                    <h3 class="text-xl font-bold text-white mb-4 font-mono">Tools & Sec</h3>
-                    <div class="flex flex-wrap gap-2 font-mono text-xs text-cyber-green">
-                        <span class="px-2 py-1 bg-cyber-green/10 border border-cyber-green/30">Git</span>
-                        <span class="px-2 py-1 bg-cyber-green/10 border border-cyber-green/30">AWS Cloud</span>
-                        <span class="px-2 py-1 bg-cyber-green/10 border border-cyber-green/30">Linux CLI</span>
-                        <span class="px-2 py-1 bg-cyber-green/10 border border-cyber-green/30">RESTful APIs</span>
-                        <span class="px-2 py-1 bg-cyber-green/10 border border-cyber-green/30">Vulnerability Testing</span>
+                    <h3 class="text-xl font-bold text-white mb-6 font-mono">Tools & Sec</h3>
+                    <div class="flex flex-wrap gap-4 font-mono text-xs text-cyber-green">
+                        
+                        <div class="relative group cursor-pointer">
+                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover:scale-110 group-hover:bg-cyber-green group-hover:text-black">Git</span>
+                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-2 bg-cyber-bg border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
+                                Version Control, Branching, Actions
+                            </div>
+                        </div>
+
+                        <div class="relative group cursor-pointer">
+                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover:scale-110 group-hover:bg-cyber-green group-hover:text-black">AWS Cloud</span>
+                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-2 bg-cyber-bg border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
+                                EC2, S3, IAM, VPC Deployments
+                            </div>
+                        </div>
+
+                        <div class="relative group cursor-pointer">
+                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover:scale-110 group-hover:bg-cyber-green group-hover:text-black">Linux CLI</span>
+                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-2 bg-cyber-bg border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
+                                Server Admin, Firewalls, Permissions
+                            </div>
+                        </div>
+
+                        <div class="relative group cursor-pointer">
+                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover:scale-110 group-hover:bg-cyber-green group-hover:text-black">RESTful APIs</span>
+                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-2 bg-cyber-bg border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
+                                E2E Integration, Secure GET/POST
+                            </div>
+                        </div>
+
+                        <div class="relative group cursor-pointer">
+                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover:scale-110 group-hover:bg-cyber-green group-hover:text-black">Vulnerability Testing</span>
+                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-2 bg-cyber-bg border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
+                                Manual Scans, SQLi & Malware Mitigation
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -159,38 +251,59 @@
                 
                 <div class="relative pl-8 exp-item">
                     <div class="absolute -left-[5px] top-1 w-2 h-2 bg-cyber-green shadow-[0_0_10px_#00ff41]"></div>
-                    <span class="font-mono text-sm text-cyber-cyan">06/2025 - Present</span>
-                    <h3 class="text-2xl font-bold text-white mt-2">Project Sales Corporation</h3>
-                    <p class="text-gray-500 mb-4 font-mono text-sm">> Jr. SDE & Web Security Intern</p>
-                    <ul class="text-gray-400 space-y-2 text-sm border-l border-cyber-border/50 pl-4">
-                        <li>Developed Real-Time CRM desktop application with visualized data dashboards.</li>
-                        <li>Purged malwares and backdoors from compromised WordPress websites resulting from SQL injections.</li>
-                        <li>Configured server firewalls and executed manual vulnerability testing.</li>
-                    </ul>
+                    <div class="flex flex-col md:flex-row gap-6 items-start">
+                        <div class="md:w-1/5 shrink-0 hidden md:block">
+                            <img src="./PSC.png" alt="PSC" class="w-20 h-20 object-contain bg-white/5 border border-cyber-border p-2 rounded">
+                        </div>
+                        <div class="md:w-4/5">
+                            <span class="font-mono text-sm text-cyber-cyan">06/2025 - Present</span>
+                            <h3 class="text-2xl font-bold text-white mt-1">Project Sales Corporation</h3>
+                            <p class="text-gray-500 mb-4 font-mono text-sm">> Jr. SDE & Web Security Intern</p>
+                            <ul class="text-gray-400 space-y-2 text-sm border-l border-cyber-border/50 pl-4">
+                                <li>Developed Real-Time CRM desktop application with visualized data dashboards.</li>
+                                <li>Purged malwares and backdoors from compromised WordPress websites resulting from SQL injections.</li>
+                                <li>Configured server firewalls and executed manual vulnerability testing.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="relative pl-8 exp-item">
                     <div class="absolute -left-[5px] top-1 w-2 h-2 bg-cyber-green shadow-[0_0_10px_#00ff41]"></div>
-                    <span class="font-mono text-sm text-cyber-cyan">06/2025 - 09/2025</span>
-                    <h3 class="text-2xl font-bold text-white mt-2">UptoSkills</h3>
-                    <p class="text-gray-500 mb-4 font-mono text-sm">> Full Stack Web Developer (MERN)</p>
-                    <ul class="text-gray-400 space-y-2 text-sm border-l border-cyber-border/50 pl-4">
-                        <li>Headed development of a comprehensive HRMS portal.</li>
-                        <li>Implemented secure employee communication with SHA-256 end-to-end encryption.</li>
-                        <li>Engineered and integrated RESTful APIs to handle high-efficiency data requests.</li>
-                    </ul>
+                    <div class="flex flex-col md:flex-row gap-6 items-start">
+                        <div class="md:w-1/5 shrink-0 hidden md:block">
+                            <img src="./uptoskills.jpeg" alt="UptoSkills" class="w-20 h-20 object-contain bg-white/5 border border-cyber-border p-2 rounded">
+                        </div>
+                        <div class="md:w-4/5">
+                            <span class="font-mono text-sm text-cyber-cyan">06/2025 - 09/2025</span>
+                            <h3 class="text-2xl font-bold text-white mt-1">UptoSkills</h3>
+                            <p class="text-gray-500 mb-4 font-mono text-sm">> Full Stack Web Developer (MERN)</p>
+                            <ul class="text-gray-400 space-y-2 text-sm border-l border-cyber-border/50 pl-4">
+                                <li>Headed development of a comprehensive HRMS portal.</li>
+                                <li>Implemented secure employee communication with SHA-256 end-to-end encryption.</li>
+                                <li>Engineered and integrated RESTful APIs to handle high-efficiency data requests.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="relative pl-8 exp-item">
                     <div class="absolute -left-[5px] top-1 w-2 h-2 bg-cyber-green shadow-[0_0_10px_#00ff41]"></div>
-                    <span class="font-mono text-sm text-cyber-cyan">04/2024 - 10/2024</span>
-                    <h3 class="text-2xl font-bold text-white mt-2">Avishkar Tech Solutions</h3>
-                    <p class="text-gray-500 mb-4 font-mono text-sm">> Full Stack Django Web Developer</p>
-                    <ul class="text-gray-400 space-y-2 text-sm border-l border-cyber-border/50 pl-4">
-                        <li>Engineered a mock railway ticket reservation system to test queue and database interactions.</li>
-                        <li>Deployed applications online adhering to high security standards.</li>
-                        <li>Guided co-interns through technical challenges and live project bug fixes.</li>
-                    </ul>
+                    <div class="flex flex-col md:flex-row gap-6 items-start">
+                        <div class="md:w-1/5 shrink-0 hidden md:block">
+                            <img src="./ATS.jpeg" alt="Avishkar Tech Solutions" class="w-20 h-20 object-contain bg-white/5 border border-cyber-border p-2 rounded">
+                        </div>
+                        <div class="md:w-4/5">
+                            <span class="font-mono text-sm text-cyber-cyan">04/2024 - 10/2024</span>
+                            <h3 class="text-2xl font-bold text-white mt-1">Avishkar Tech Solutions</h3>
+                            <p class="text-gray-500 mb-4 font-mono text-sm">> Full Stack Django Web Developer</p>
+                            <ul class="text-gray-400 space-y-2 text-sm border-l border-cyber-border/50 pl-4">
+                                <li>Engineered a mock railway ticket reservation system to test queue and database interactions.</li>
+                                <li>Deployed applications online adhering to high security standards.</li>
+                                <li>Guided co-interns through technical challenges and live project bug fixes.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -208,7 +321,6 @@
                         <i class="far fa-folder-open text-4xl text-cyber-cyan"></i>
                         <div class="flex space-x-3 text-gray-500">
                             <i class="fab fa-github hover:text-cyber-green cursor-pointer transition-colors"></i>
-                            <i class="fas fa-external-link-alt hover:text-cyber-green cursor-pointer transition-colors"></i>
                         </div>
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-cyber-green transition-colors font-mono">Co-Lab IDE</h3>
@@ -235,6 +347,41 @@
                     <div class="font-mono text-xs text-cyber-cyan flex space-x-3">
                         <span>React</span>
                         <span>Electron.js</span>
+                        <span>SQL</span>
+                    </div>
+                </div>
+
+                <div class="bg-cyber-panel border border-cyber-border p-8 cyber-card group hover:-translate-y-2 transition-transform">
+                    <div class="flex justify-between items-start mb-6">
+                        <i class="far fa-folder-open text-4xl text-cyber-cyan"></i>
+                        <div class="flex space-x-3 text-gray-500">
+                            <i class="fab fa-github hover:text-cyber-green cursor-pointer transition-colors"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-cyber-green transition-colors font-mono">Recepedia ML</h3>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                        A responsive ML-based recipe forecasting web app. Combines machine learning practices to predict user health and nutrition guides, featuring UI components optimized for seamless data flow.
+                    </p>
+                    <div class="font-mono text-xs text-cyber-cyan flex space-x-3">
+                        <span>MERN Stack</span>
+                        <span>Machine Learning</span>
+                    </div>
+                </div>
+
+                <div class="bg-cyber-panel border border-cyber-border p-8 cyber-card group hover:-translate-y-2 transition-transform">
+                    <div class="flex justify-between items-start mb-6">
+                        <i class="far fa-folder-open text-4xl text-cyber-cyan"></i>
+                        <div class="flex space-x-3 text-gray-500">
+                            <i class="fas fa-external-link-alt hover:text-cyber-green cursor-pointer transition-colors"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-cyber-green transition-colors font-mono">Railway Ticket System</h3>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                        Indian railway reservation system built to prove technical system design values. Implemented queue method booking simulations for user scalability, server load balancing, and remote SQL security.
+                    </p>
+                    <div class="font-mono text-xs text-cyber-cyan flex space-x-3">
+                        <span>Django</span>
+                        <span>Python</span>
                         <span>SQL</span>
                     </div>
                 </div>
@@ -295,10 +442,13 @@
                 <form action="https://formsubmit.co/pavanpk1222@gmail.com" method="POST" class="space-y-6 relative z-10 font-mono">
                     <input type="hidden" name="_captcha" value="false">
                     <div class="flex flex-col md:flex-row gap-6">
-                        <input type="text" name="name" required placeholder="name_var" class="w-full md:w-1/2 bg-cyber-bg border border-cyber-border px-4 py-3 text-white focus:border-cyber-green focus:outline-none transition-colors text-sm">
-                        <input type="email" name="email" required placeholder="email_address" class="w-full md:w-1/2 bg-cyber-bg border border-cyber-border px-4 py-3 text-white focus:border-cyber-green focus:outline-none transition-colors text-sm">
+                        <input type="text" name="name" required placeholder="name_var" class="w-full md:w-1/2 bg-[#0d0d0d] border border-cyber-green/40 px-4 py-3 text-white placeholder-gray-600 focus:border-cyber-green focus:ring-1 focus:ring-cyber-green focus:outline-none transition-colors text-sm">
+                        
+                        <input type="email" name="email" required placeholder="email_address" class="w-full md:w-1/2 bg-[#0d0d0d] border border-cyber-green/40 px-4 py-3 text-white placeholder-gray-600 focus:border-cyber-green focus:ring-1 focus:ring-cyber-green focus:outline-none transition-colors text-sm">
                     </div>
-                    <textarea name="message" required rows="5" placeholder="Enter message payload..." class="w-full bg-cyber-bg border border-cyber-border px-4 py-3 text-white focus:border-cyber-green focus:outline-none transition-colors text-sm"></textarea>
+                    
+                    <textarea name="message" required rows="5" placeholder="Enter message payload..." class="w-full bg-[#0d0d0d] border border-cyber-green/40 px-4 py-3 text-white placeholder-gray-600 focus:border-cyber-green focus:ring-1 focus:ring-cyber-green focus:outline-none transition-colors text-sm"></textarea>
+                    
                     <button type="submit" class="w-full bg-cyber-green/10 border border-cyber-green text-cyber-green hover:bg-cyber-green hover:text-black font-bold py-4 transition-all duration-300">
                         > SEND_TRANSMISSION
                     </button>
