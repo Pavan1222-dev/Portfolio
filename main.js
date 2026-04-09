@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
             gsap.to(flashlight, {
                 x: e.clientX,
                 y: e.clientY,
-                duration: 0.1, // Quick, responsive follow
+                duration: 0.1,
                 ease: "power2.out"
             });
         });
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
           .from('.block-reveal', { y: 50, scale: 0.8, opacity: 0, duration: 1, stagger: 0.15, ease: "back.out(1.7)" }, "-=0.8")
           .from('.hero-img', { scale: 0.5, rotationY: 45, opacity: 0, filter: "blur(20px)", duration: 1.5, ease: "elastic.out(1, 0.6)" }, "-=1");
 
-    // 3D Tilt Effect
+    // 3D Tilt (For standard tilt cards)
     const tiltCards = document.querySelectorAll('.tilt-card');
     tiltCards.forEach(card => {
         card.addEventListener('mousemove', e => {
@@ -83,21 +83,8 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     animateSection('.section-title', 50);
-    animateSection('.cyber-card', 100);
+    animateSection('.cyber-card', 100); // Because we removed .cyber-card from the contact form, it won't be hidden by this script anymore!
     animateSection('.exp-item', 60);
-    
-    // THE FOOLPROOF CONTACT FORM FIX
-    gsap.from('.contact-box', {
-        scrollTrigger: {
-            trigger: '#contact',
-            start: "top bottom", // Fires the absolute instant the top edge enters the screen
-            toggleActions: "play none none none"
-        },
-        y: 80,
-        opacity: 0,
-        duration: 1.5,
-        ease: "power3.out"
-    });
 
     // Hero Image Magnetic Tracking
     const heroImgContainer = document.querySelector('.magnetic-box');
