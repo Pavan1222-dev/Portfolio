@@ -2,6 +2,7 @@
 body {
     scrollbar-width: thin;
     scrollbar-color: #00ff41 #050505;
+    perspective: 1000px; /* Required for 3D tilt effect */
 }
 
 ::-webkit-scrollbar {
@@ -14,14 +15,46 @@ body {
     background: #00ff41;
 }
 
+/* Custom Nav Hover Effect */
+.nav-link {
+    position: relative;
+    display: inline-block;
+}
+.nav-link::before {
+    content: '[';
+    position: absolute;
+    left: -15px;
+    opacity: 0;
+    color: #00ff41;
+    transition: all 0.3s ease;
+}
+.nav-link::after {
+    content: ']';
+    position: absolute;
+    right: -15px;
+    opacity: 0;
+    color: #00ff41;
+    transition: all 0.3s ease;
+}
+.nav-link:hover::before {
+    left: -10px;
+    opacity: 1;
+}
+.nav-link:hover::after {
+    right: -10px;
+    opacity: 1;
+}
+
 /* Hacker Theme Components */
 .cyber-card {
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
-    transition: all 0.3s ease;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    transform-style: preserve-3d;
 }
 
 .cyber-card:hover {
-    box-shadow: 0 0 15px rgba(0, 243, 255, 0.1);
+    box-shadow: 0 0 25px rgba(0, 243, 255, 0.15);
+    border-color: rgba(0, 243, 255, 0.4);
 }
 
 .cyber-box-shadow {

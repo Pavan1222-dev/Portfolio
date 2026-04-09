@@ -41,12 +41,12 @@
     <nav class="fixed w-full z-50 top-0 border-b border-cyber-green/30 bg-cyber-bg/80 backdrop-blur-md nav-anim">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-2xl font-mono font-bold text-cyber-green tracking-widest glitch-text" data-text="PPK_SYS">PPK_SYS</a>
-            <div class="hidden md:flex space-x-8 font-mono text-sm">
-                <a href="#about" class="hover:text-cyber-cyan transition-colors duration-300">> About</a>
-                <a href="#skills" class="hover:text-cyber-cyan transition-colors duration-300">> Skills</a>
-                <a href="#experience" class="hover:text-cyber-cyan transition-colors duration-300">> Experience</a>
-                <a href="#projects" class="hover:text-cyber-cyan transition-colors duration-300">> Projects</a>
-                <a href="#contact" class="hover:text-cyber-cyan transition-colors duration-300">> Contact</a>
+            <div class="hidden md:flex space-x-10 font-mono text-sm">
+                <a href="#about" class="nav-link text-gray-400 hover:text-cyber-green transition-colors duration-300">About</a>
+                <a href="#skills" class="nav-link text-gray-400 hover:text-cyber-green transition-colors duration-300">Skills</a>
+                <a href="#experience" class="nav-link text-gray-400 hover:text-cyber-green transition-colors duration-300">Experience</a>
+                <a href="#projects" class="nav-link text-gray-400 hover:text-cyber-green transition-colors duration-300">Projects</a>
+                <a href="#contact" class="nav-link text-gray-400 hover:text-cyber-green transition-colors duration-300">Contact</a>
             </div>
         </div>
     </nav>
@@ -55,7 +55,7 @@
         <div class="max-w-7xl mx-auto px-6 flex flex-col-reverse md:flex-row items-center gap-16 w-full">
             <div class="flex-1 text-center md:text-left hero-text">
                 <p class="font-mono text-cyber-cyan mb-4 block-reveal">> SYSTEM.INIT("Hello, World");</p>
-                <h1 class="text-5xl md:text-7xl font-bold text-white mb-4 block-reveal font-mono">
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-4 block-reveal font-mono leading-tight">
                     Pavan Kumar <br><span class="text-cyber-green glitch-text" data-text="Palika">Palika</span>
                 </h1>
                 <h3 class="text-2xl font-light mb-8 text-gray-400 block-reveal border-l-2 border-cyber-cyan pl-4">Full-Stack SDE & Sec Analyst</h3>
@@ -68,8 +68,8 @@
                 </div>
             </div>
             <div class="flex-1 flex justify-center md:justify-end hero-img">
-                <div class="relative w-72 h-72 md:w-96 md:h-96 rounded-none border border-cyber-green p-2 cyber-box-shadow group bg-cyber-panel">
-                    <img src="https://kommodo.ai/i/gJWkOIO9lTfFQgo07dBG" alt="Profile" class="w-full h-full object-cover grayscale opacity-80 transition-all duration-500 group-hover:grayscale-0 group-hover:opacity-100 mix-blend-screen">
+                <div class="relative w-80 h-80 md:w-[450px] md:h-[450px] rounded-none border border-cyber-green p-2 cyber-box-shadow group bg-cyber-panel">
+                    <img src="./img.png" onerror="this.src='https://kommodo.ai/i/gJWkOIO9lTfFQgo07dBG'" alt="Profile" class="w-full h-full object-cover grayscale opacity-80 transition-all duration-500 group-hover:grayscale-0 group-hover:opacity-100 mix-blend-screen">
                     <div class="absolute -top-2 -left-2 w-4 h-4 border-t-2 border-l-2 border-cyber-cyan"></div>
                     <div class="absolute -top-2 -right-2 w-4 h-4 border-t-2 border-r-2 border-cyber-cyan"></div>
                     <div class="absolute -bottom-2 -left-2 w-4 h-4 border-b-2 border-l-2 border-cyber-cyan"></div>
@@ -84,7 +84,7 @@
             <h2 class="text-4xl font-mono font-bold text-white mb-12 flex items-center section-title">
                 <span class="text-cyber-green mr-4">01.</span> <span class="border-b border-cyber-green pb-2">About_Me</span>
             </h2>
-            <div class="bg-cyber-panel border border-cyber-border p-8 cyber-card">
+            <div class="bg-cyber-panel border border-cyber-border p-8 cyber-card tilt-card">
                 <div class="flex items-center mb-6 border-b border-cyber-border pb-4">
                     <div class="w-3 h-3 rounded-full bg-red-500 mr-2"></div>
                     <div class="w-3 h-3 rounded-full bg-yellow-500 mr-2"></div>
@@ -103,159 +103,124 @@
     </section>
 
     <section class="py-24 relative z-10" id="skills">
-        <div class="max-w-6xl mx-auto px-6">
+        <div class="max-w-7xl mx-auto px-6">
             <h2 class="text-4xl font-mono font-bold text-white mb-16 flex items-center section-title">
                 <span class="text-cyber-green mr-4">02.</span> <span class="border-b border-cyber-green pb-2">Tech_Arsenal</span>
             </h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 skill-grid">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 skill-grid">
                 
-                <div class="bg-cyber-panel border border-cyber-border p-8 cyber-card hover:border-cyber-cyan transition-colors">
-                    <i class="fas fa-terminal text-3xl text-cyber-cyan mb-6"></i>
-                    <h3 class="text-xl font-bold text-white mb-6 font-mono">Languages</h3>
-                    <div class="flex flex-wrap gap-4 font-mono text-xs text-cyber-green">
-                        
-                        <div class="relative group cursor-pointer">
-                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover:scale-110 group-hover:bg-cyber-green group-hover:text-black">Python</span>
-                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-2 bg-cyber-bg border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
+                <div class="bg-cyber-panel border border-cyber-border p-8 cyber-card tilt-card group">
+                    <i class="fas fa-terminal text-4xl text-cyber-cyan mb-8 transition-transform group-hover:scale-110"></i>
+                    <h3 class="text-2xl font-bold text-white mb-6 font-mono">Languages</h3>
+                    <div class="flex flex-wrap gap-4 font-mono text-sm text-cyber-green">
+                        <div class="relative group/tooltip cursor-pointer">
+                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover/tooltip:scale-110 group-hover/tooltip:bg-cyber-green group-hover/tooltip:text-black shadow-lg">Python</span>
+                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-max px-4 py-2 bg-[#050505] border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover/tooltip:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
                                 Django, Data Processing, Scripting
                             </div>
                         </div>
-
-                        <div class="relative group cursor-pointer">
-                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover:scale-110 group-hover:bg-cyber-green group-hover:text-black">C++</span>
-                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-2 bg-cyber-bg border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
+                        <div class="relative group/tooltip cursor-pointer">
+                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover/tooltip:scale-110 group-hover/tooltip:bg-cyber-green group-hover/tooltip:text-black shadow-lg">C++</span>
+                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-max px-4 py-2 bg-[#050505] border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover/tooltip:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
                                 OOPs, Data Structures, Algorithms
                             </div>
                         </div>
-
-                        <div class="relative group cursor-pointer">
-                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover:scale-110 group-hover:bg-cyber-green group-hover:text-black">JavaScript</span>
-                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-2 bg-cyber-bg border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
-                                React.js, Express.js, DOM Manipulation
+                        <div class="relative group/tooltip cursor-pointer">
+                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover/tooltip:scale-110 group-hover/tooltip:bg-cyber-green group-hover/tooltip:text-black shadow-lg">JavaScript</span>
+                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-max px-4 py-2 bg-[#050505] border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover/tooltip:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
+                                React.js, Express.js, DOM
                             </div>
                         </div>
-
-                        <div class="relative group cursor-pointer">
-                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover:scale-110 group-hover:bg-cyber-green group-hover:text-black">SQL</span>
-                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-2 bg-cyber-bg border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
+                        <div class="relative group/tooltip cursor-pointer">
+                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover/tooltip:scale-110 group-hover/tooltip:bg-cyber-green group-hover/tooltip:text-black shadow-lg">SQL</span>
+                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-max px-4 py-2 bg-[#050505] border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover/tooltip:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
                                 Relational DBs, Complex Queries
                             </div>
                         </div>
-
-                        <div class="relative group cursor-pointer">
-                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover:scale-110 group-hover:bg-cyber-green group-hover:text-black">PHP</span>
-                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-2 bg-cyber-bg border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
-                                Server Scripting, WordPress Backend
+                        <div class="relative group/tooltip cursor-pointer">
+                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover/tooltip:scale-110 group-hover/tooltip:bg-cyber-green group-hover/tooltip:text-black shadow-lg">PHP</span>
+                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-max px-4 py-2 bg-[#050505] border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover/tooltip:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
+                                Server Scripting, WordPress
                             </div>
                         </div>
-
-                        <div class="relative group cursor-pointer">
-                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover:scale-110 group-hover:bg-cyber-green group-hover:text-black">Bash</span>
-                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-2 bg-cyber-bg border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
-                                Linux CLI, Automation, Scripting
+                        <div class="relative group/tooltip cursor-pointer">
+                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover/tooltip:scale-110 group-hover/tooltip:bg-cyber-green group-hover/tooltip:text-black shadow-lg">Bash</span>
+                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-max px-4 py-2 bg-[#050505] border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover/tooltip:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
+                                Linux CLI, Automation
                             </div>
                         </div>
-
                     </div>
                 </div>
 
-                <div class="bg-cyber-panel border border-cyber-border p-8 cyber-card hover:border-cyber-cyan transition-colors">
-                    <i class="fas fa-network-wired text-3xl text-cyber-cyan mb-6"></i>
-                    <h3 class="text-xl font-bold text-white mb-6 font-mono">Frameworks</h3>
-                    <div class="flex flex-wrap gap-4 font-mono text-xs text-cyber-green">
-                        
-                        <div class="relative group cursor-pointer">
-                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover:scale-110 group-hover:bg-cyber-green group-hover:text-black">MERN Stack</span>
-                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-2 bg-cyber-bg border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
+                <div class="bg-cyber-panel border border-cyber-border p-8 cyber-card tilt-card group">
+                    <i class="fas fa-network-wired text-4xl text-cyber-cyan mb-8 transition-transform group-hover:scale-110"></i>
+                    <h3 class="text-2xl font-bold text-white mb-6 font-mono">Frameworks</h3>
+                    <div class="flex flex-wrap gap-4 font-mono text-sm text-cyber-green">
+                        <div class="relative group/tooltip cursor-pointer">
+                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover/tooltip:scale-110 group-hover/tooltip:bg-cyber-green group-hover/tooltip:text-black shadow-lg">MERN Stack</span>
+                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-max px-4 py-2 bg-[#050505] border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover/tooltip:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
                                 MongoDB, Express, React, Node.js
                             </div>
                         </div>
-
-                        <div class="relative group cursor-pointer">
-                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover:scale-110 group-hover:bg-cyber-green group-hover:text-black">Django</span>
-                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-2 bg-cyber-bg border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
-                                Python Web Dev, ORM, Secure Views
+                        <div class="relative group/tooltip cursor-pointer">
+                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover/tooltip:scale-110 group-hover/tooltip:bg-cyber-green group-hover/tooltip:text-black shadow-lg">Django</span>
+                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-max px-4 py-2 bg-[#050505] border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover/tooltip:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
+                                Python Web Dev, ORM
                             </div>
                         </div>
-
-                        <div class="relative group cursor-pointer">
-                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover:scale-110 group-hover:bg-cyber-green group-hover:text-black">Electron.js</span>
-                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-2 bg-cyber-bg border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
-                                Cross-Platform Desktop Apps
+                        <div class="relative group/tooltip cursor-pointer">
+                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover/tooltip:scale-110 group-hover/tooltip:bg-cyber-green group-hover/tooltip:text-black shadow-lg">Electron.js</span>
+                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-max px-4 py-2 bg-[#050505] border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover/tooltip:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
+                                Desktop Applications
                             </div>
                         </div>
-
-                        <div class="relative group cursor-pointer">
-                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover:scale-110 group-hover:bg-cyber-green group-hover:text-black">WordPress</span>
-                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-2 bg-cyber-bg border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
-                                CMS, Malware Removal, Security
-                            </div>
-                        </div>
-
                     </div>
                 </div>
 
-                <div class="bg-cyber-panel border border-cyber-border p-8 cyber-card hover:border-cyber-cyan transition-colors">
-                    <i class="fas fa-shield-alt text-3xl text-cyber-cyan mb-6"></i>
-                    <h3 class="text-xl font-bold text-white mb-6 font-mono">Tools & Sec</h3>
-                    <div class="flex flex-wrap gap-4 font-mono text-xs text-cyber-green">
-                        
-                        <div class="relative group cursor-pointer">
-                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover:scale-110 group-hover:bg-cyber-green group-hover:text-black">Git</span>
-                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-2 bg-cyber-bg border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
-                                Version Control, Branching, Actions
-                            </div>
-                        </div>
-
-                        <div class="relative group cursor-pointer">
-                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover:scale-110 group-hover:bg-cyber-green group-hover:text-black">AWS Cloud</span>
-                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-2 bg-cyber-bg border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
+                <div class="bg-cyber-panel border border-cyber-border p-8 cyber-card tilt-card group">
+                    <i class="fas fa-shield-alt text-4xl text-cyber-cyan mb-8 transition-transform group-hover:scale-110"></i>
+                    <h3 class="text-2xl font-bold text-white mb-6 font-mono">Tools & Sec</h3>
+                    <div class="flex flex-wrap gap-4 font-mono text-sm text-cyber-green">
+                        <div class="relative group/tooltip cursor-pointer">
+                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover/tooltip:scale-110 group-hover/tooltip:bg-cyber-green group-hover/tooltip:text-black shadow-lg">AWS Cloud</span>
+                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-max px-4 py-2 bg-[#050505] border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover/tooltip:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
                                 EC2, S3, IAM, VPC Deployments
                             </div>
                         </div>
-
-                        <div class="relative group cursor-pointer">
-                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover:scale-110 group-hover:bg-cyber-green group-hover:text-black">Linux CLI</span>
-                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-2 bg-cyber-bg border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
-                                Server Admin, Firewalls, Permissions
+                        <div class="relative group/tooltip cursor-pointer">
+                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover/tooltip:scale-110 group-hover/tooltip:bg-cyber-green group-hover/tooltip:text-black shadow-lg">Linux CLI</span>
+                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-max px-4 py-2 bg-[#050505] border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover/tooltip:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
+                                Server Admin, Firewalls
                             </div>
                         </div>
-
-                        <div class="relative group cursor-pointer">
-                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover:scale-110 group-hover:bg-cyber-green group-hover:text-black">RESTful APIs</span>
-                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-2 bg-cyber-bg border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
-                                E2E Integration, Secure GET/POST
+                        <div class="relative group/tooltip cursor-pointer">
+                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover/tooltip:scale-110 group-hover/tooltip:bg-cyber-green group-hover/tooltip:text-black shadow-lg">Vuln Testing</span>
+                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-max px-4 py-2 bg-[#050505] border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover/tooltip:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
+                                SQLi & Malware Mitigation
                             </div>
                         </div>
-
-                        <div class="relative group cursor-pointer">
-                            <span class="px-3 py-1 bg-cyber-green/10 border border-cyber-green/30 transition-transform duration-300 block group-hover:scale-110 group-hover:bg-cyber-green group-hover:text-black">Vulnerability Testing</span>
-                            <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-max px-3 py-2 bg-cyber-bg border border-cyber-cyan text-cyber-cyan rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50 shadow-cyber">
-                                Manual Scans, SQLi & Malware Mitigation
-                            </div>
-                        </div>
-
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
     <section class="py-24 relative z-10 bg-cyber-bg" id="experience">
-        <div class="max-w-5xl mx-auto px-6">
+        <div class="max-w-6xl mx-auto px-6">
             <h2 class="text-4xl font-mono font-bold text-white mb-16 flex items-center section-title">
                 <span class="text-cyber-green mr-4">03.</span> <span class="border-b border-cyber-green pb-2">Execution_Log</span>
             </h2>
             
-            <div class="relative border-l border-cyber-border ml-4 md:ml-8 space-y-12 exp-timeline">
+            <div class="relative border-l border-cyber-border ml-4 md:ml-8 space-y-16 exp-timeline">
                 
                 <div class="relative pl-8 exp-item">
                     <div class="absolute -left-[5px] top-1 w-2 h-2 bg-cyber-green shadow-[0_0_10px_#00ff41]"></div>
-                    <div class="flex flex-col md:flex-row gap-6 items-start">
-                        <div class="md:w-1/5 shrink-0 hidden md:block">
-                            <img src="./PSC.png" alt="PSC" class="w-20 h-20 object-contain bg-white/5 border border-cyber-border p-2 rounded">
+                    <div class="flex flex-col md:flex-row gap-8 items-start bg-cyber-panel/50 p-6 border border-cyber-border/50 rounded-lg hover:border-cyber-cyan/50 transition-colors">
+                        <div class="md:w-32 shrink-0">
+                            <img src="./PSC.png" alt="PSC" class="w-full h-auto object-contain bg-white/5 border border-cyber-border p-2 rounded shadow-lg">
                         </div>
-                        <div class="md:w-4/5">
+                        <div class="flex-1">
                             <span class="font-mono text-sm text-cyber-cyan">06/2025 - Present</span>
                             <h3 class="text-2xl font-bold text-white mt-1">Project Sales Corporation</h3>
                             <p class="text-gray-500 mb-4 font-mono text-sm">> Jr. SDE & Web Security Intern</p>
@@ -270,11 +235,11 @@
 
                 <div class="relative pl-8 exp-item">
                     <div class="absolute -left-[5px] top-1 w-2 h-2 bg-cyber-green shadow-[0_0_10px_#00ff41]"></div>
-                    <div class="flex flex-col md:flex-row gap-6 items-start">
-                        <div class="md:w-1/5 shrink-0 hidden md:block">
-                            <img src="./uptoskills.jpeg" alt="UptoSkills" class="w-20 h-20 object-contain bg-white/5 border border-cyber-border p-2 rounded">
+                    <div class="flex flex-col md:flex-row gap-8 items-start bg-cyber-panel/50 p-6 border border-cyber-border/50 rounded-lg hover:border-cyber-cyan/50 transition-colors">
+                        <div class="md:w-32 shrink-0">
+                            <img src="./uptoskills.jpg" alt="UptoSkills" class="w-full h-auto object-contain bg-white/5 border border-cyber-border p-2 rounded shadow-lg">
                         </div>
-                        <div class="md:w-4/5">
+                        <div class="flex-1">
                             <span class="font-mono text-sm text-cyber-cyan">06/2025 - 09/2025</span>
                             <h3 class="text-2xl font-bold text-white mt-1">UptoSkills</h3>
                             <p class="text-gray-500 mb-4 font-mono text-sm">> Full Stack Web Developer (MERN)</p>
@@ -289,11 +254,11 @@
 
                 <div class="relative pl-8 exp-item">
                     <div class="absolute -left-[5px] top-1 w-2 h-2 bg-cyber-green shadow-[0_0_10px_#00ff41]"></div>
-                    <div class="flex flex-col md:flex-row gap-6 items-start">
-                        <div class="md:w-1/5 shrink-0 hidden md:block">
-                            <img src="./ATS.jpeg" alt="Avishkar Tech Solutions" class="w-20 h-20 object-contain bg-white/5 border border-cyber-border p-2 rounded">
+                    <div class="flex flex-col md:flex-row gap-8 items-start bg-cyber-panel/50 p-6 border border-cyber-border/50 rounded-lg hover:border-cyber-cyan/50 transition-colors">
+                        <div class="md:w-32 shrink-0">
+                            <img src="./ATS.jpg" alt="Avishkar Tech Solutions" class="w-full h-auto object-contain bg-white/5 border border-cyber-border p-2 rounded shadow-lg">
                         </div>
-                        <div class="md:w-4/5">
+                        <div class="flex-1">
                             <span class="font-mono text-sm text-cyber-cyan">04/2024 - 10/2024</span>
                             <h3 class="text-2xl font-bold text-white mt-1">Avishkar Tech Solutions</h3>
                             <p class="text-gray-500 mb-4 font-mono text-sm">> Full Stack Django Web Developer</p>
@@ -310,114 +275,66 @@
     </section>
 
     <section class="py-24 relative z-10" id="projects">
-        <div class="max-w-6xl mx-auto px-6">
+        <div class="max-w-7xl mx-auto px-6">
             <h2 class="text-4xl font-mono font-bold text-white mb-16 flex items-center section-title">
                 <span class="text-cyber-green mr-4">04.</span> <span class="border-b border-cyber-green pb-2">Compiled_Binaries</span>
             </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 project-grid">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 project-grid">
                 
-                <div class="bg-cyber-panel border border-cyber-border p-8 cyber-card group hover:-translate-y-2 transition-transform">
+                <div class="bg-cyber-panel border border-cyber-border p-10 cyber-card tilt-card group cursor-pointer">
                     <div class="flex justify-between items-start mb-6">
-                        <i class="far fa-folder-open text-4xl text-cyber-cyan"></i>
-                        <div class="flex space-x-3 text-gray-500">
-                            <i class="fab fa-github hover:text-cyber-green cursor-pointer transition-colors"></i>
-                        </div>
+                        <i class="far fa-folder-open text-5xl text-cyber-cyan group-hover:text-cyber-green transition-colors duration-300"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-cyber-green transition-colors font-mono">Co-Lab IDE</h3>
-                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                    <h3 class="text-3xl font-bold text-white mb-4 group-hover:text-cyber-green transition-colors font-mono">Co-Lab IDE</h3>
+                    <p class="text-gray-400 text-base mb-8 leading-relaxed">
                         A collaborative IDE enabling secure team coding environments. Implemented code synchronization protocols achieving sub-0.2ms latency using a local-first (a=0.8) and cloud (b=0.2) hybrid architecture.
                     </p>
-                    <div class="font-mono text-xs text-cyber-cyan flex space-x-3">
-                        <span>Tauri-React</span>
-                        <span>Firebase</span>
+                    <div class="font-mono text-sm text-cyber-cyan flex space-x-4">
+                        <span class="bg-[#050505] px-2 py-1 rounded border border-cyber-cyan/30">Tauri-React</span>
+                        <span class="bg-[#050505] px-2 py-1 rounded border border-cyber-cyan/30">Firebase</span>
                     </div>
                 </div>
 
-                <div class="bg-cyber-panel border border-cyber-border p-8 cyber-card group hover:-translate-y-2 transition-transform">
+                <div class="bg-cyber-panel border border-cyber-border p-10 cyber-card tilt-card group cursor-pointer">
                     <div class="flex justify-between items-start mb-6">
-                        <i class="far fa-folder-open text-4xl text-cyber-cyan"></i>
-                        <div class="flex space-x-3 text-gray-500">
-                            <i class="fab fa-github hover:text-cyber-green cursor-pointer transition-colors"></i>
-                        </div>
+                        <i class="far fa-folder-open text-5xl text-cyber-cyan group-hover:text-cyber-green transition-colors duration-300"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-cyber-green transition-colors font-mono">CRM & Invoice Tracker</h3>
-                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                    <h3 class="text-3xl font-bold text-white mb-4 group-hover:text-cyber-green transition-colors font-mono">CRM & Invoice Tracker</h3>
+                    <p class="text-gray-400 text-base mb-8 leading-relaxed">
                         Cross-platform desktop application integrating a remote SQL database. Features include automated AI-driven lead scraping, data scoring, and streamlined invoice generation protocols.
                     </p>
-                    <div class="font-mono text-xs text-cyber-cyan flex space-x-3">
-                        <span>React</span>
-                        <span>Electron.js</span>
-                        <span>SQL</span>
+                    <div class="font-mono text-sm text-cyber-cyan flex space-x-4">
+                        <span class="bg-[#050505] px-2 py-1 rounded border border-cyber-cyan/30">React</span>
+                        <span class="bg-[#050505] px-2 py-1 rounded border border-cyber-cyan/30">Electron.js</span>
+                        <span class="bg-[#050505] px-2 py-1 rounded border border-cyber-cyan/30">SQL</span>
                     </div>
                 </div>
 
-                <div class="bg-cyber-panel border border-cyber-border p-8 cyber-card group hover:-translate-y-2 transition-transform">
+                <div class="bg-cyber-panel border border-cyber-border p-10 cyber-card tilt-card group cursor-pointer">
                     <div class="flex justify-between items-start mb-6">
-                        <i class="far fa-folder-open text-4xl text-cyber-cyan"></i>
-                        <div class="flex space-x-3 text-gray-500">
-                            <i class="fab fa-github hover:text-cyber-green cursor-pointer transition-colors"></i>
-                        </div>
+                        <i class="far fa-folder-open text-5xl text-cyber-cyan group-hover:text-cyber-green transition-colors duration-300"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-cyber-green transition-colors font-mono">Recepedia ML</h3>
-                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                    <h3 class="text-3xl font-bold text-white mb-4 group-hover:text-cyber-green transition-colors font-mono">Recepedia ML</h3>
+                    <p class="text-gray-400 text-base mb-8 leading-relaxed">
                         A responsive ML-based recipe forecasting web app. Combines machine learning practices to predict user health and nutrition guides, featuring UI components optimized for seamless data flow.
                     </p>
-                    <div class="font-mono text-xs text-cyber-cyan flex space-x-3">
-                        <span>MERN Stack</span>
-                        <span>Machine Learning</span>
+                    <div class="font-mono text-sm text-cyber-cyan flex space-x-4">
+                        <span class="bg-[#050505] px-2 py-1 rounded border border-cyber-cyan/30">MERN Stack</span>
+                        <span class="bg-[#050505] px-2 py-1 rounded border border-cyber-cyan/30">Machine Learning</span>
                     </div>
                 </div>
 
-                <div class="bg-cyber-panel border border-cyber-border p-8 cyber-card group hover:-translate-y-2 transition-transform">
+                <div class="bg-cyber-panel border border-cyber-border p-10 cyber-card tilt-card group cursor-pointer">
                     <div class="flex justify-between items-start mb-6">
-                        <i class="far fa-folder-open text-4xl text-cyber-cyan"></i>
-                        <div class="flex space-x-3 text-gray-500">
-                            <i class="fas fa-external-link-alt hover:text-cyber-green cursor-pointer transition-colors"></i>
-                        </div>
+                        <i class="far fa-folder-open text-5xl text-cyber-cyan group-hover:text-cyber-green transition-colors duration-300"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-cyber-green transition-colors font-mono">Railway Ticket System</h3>
-                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                    <h3 class="text-3xl font-bold text-white mb-4 group-hover:text-cyber-green transition-colors font-mono">Railway Ticket System</h3>
+                    <p class="text-gray-400 text-base mb-8 leading-relaxed">
                         Indian railway reservation system built to prove technical system design values. Implemented queue method booking simulations for user scalability, server load balancing, and remote SQL security.
                     </p>
-                    <div class="font-mono text-xs text-cyber-cyan flex space-x-3">
-                        <span>Django</span>
-                        <span>Python</span>
-                        <span>SQL</span>
-                    </div>
-                </div>
-
-                <div class="bg-cyber-panel border border-cyber-border p-8 cyber-card group hover:-translate-y-2 transition-transform">
-                    <div class="flex justify-between items-start mb-6">
-                        <i class="far fa-folder-open text-4xl text-cyber-cyan"></i>
-                        <div class="flex space-x-3 text-gray-500">
-                            <i class="fab fa-github hover:text-cyber-green cursor-pointer transition-colors"></i>
-                        </div>
-                    </div>
-                    <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-cyber-green transition-colors font-mono">Jira Automation Unit</h3>
-                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">
-                        Atlassian Hackathon project. Engineered a workflow automation tool that securely links and automatically updates Jira tickets based on source commits from GitHub and Bitbucket.
-                    </p>
-                    <div class="font-mono text-xs text-cyber-cyan flex space-x-3">
-                        <span>Next.js</span>
-                        <span>Atlassian API</span>
-                    </div>
-                </div>
-
-                <div class="bg-cyber-panel border border-cyber-border p-8 cyber-card group hover:-translate-y-2 transition-transform">
-                    <div class="flex justify-between items-start mb-6">
-                        <i class="far fa-folder-open text-4xl text-cyber-cyan"></i>
-                        <div class="flex space-x-3 text-gray-500">
-                            <i class="fab fa-github hover:text-cyber-green cursor-pointer transition-colors"></i>
-                        </div>
-                    </div>
-                    <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-cyber-green transition-colors font-mono">HRMS Portal</h3>
-                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">
-                        End-to-end automation for HR processes. Developed a robust real-time chat module to facilitate secure, encrypted internal employee communications and collaboration.
-                    </p>
-                    <div class="font-mono text-xs text-cyber-cyan flex space-x-3">
-                        <span>MongoDB</span>
-                        <span>Express</span>
-                        <span>React</span>
+                    <div class="font-mono text-sm text-cyber-cyan flex space-x-4">
+                        <span class="bg-[#050505] px-2 py-1 rounded border border-cyber-cyan/30">Django</span>
+                        <span class="bg-[#050505] px-2 py-1 rounded border border-cyber-cyan/30">Python</span>
                     </div>
                 </div>
 
@@ -425,39 +342,39 @@
         </div>
     </section>
 
-    <section class="py-24 relative z-10 bg-cyber-bg" id="contact">
-        <div class="max-w-4xl mx-auto px-6">
-            <h2 class="text-4xl font-mono font-bold text-white mb-12 flex items-center justify-center section-title text-center">
+    <section class="py-32 relative z-10 bg-cyber-bg" id="contact">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-5xl font-mono font-bold text-white mb-16 flex items-center justify-center section-title text-center">
                 <span class="text-cyber-green mr-4">05.</span> <span class="border-b border-cyber-green pb-2">Establish_Connection</span>
             </h2>
             
-            <div class="bg-cyber-panel border border-cyber-border p-10 cyber-card contact-box relative overflow-hidden">
-                <div class="absolute inset-0 bg-gradient-to-b from-transparent via-cyber-green/5 to-transparent h-20 w-full animate-scan"></div>
+            <div class="bg-[#050505] border-2 border-cyber-border p-12 md:p-16 cyber-card tilt-card contact-box relative overflow-hidden shadow-[0_0_50px_rgba(0,243,255,0.05)]">
+                <div class="absolute inset-0 bg-gradient-to-b from-transparent via-cyber-green/5 to-transparent h-32 w-full animate-scan"></div>
                 
-                <p class="text-center font-mono text-gray-400 mb-8 text-sm">
-                    > Enter parameters below to transmit payload directly to my inbox.<br>
-                    > Or ping directly: <span class="text-cyber-cyan">+91 9989528718</span> | <span class="text-cyber-cyan">pavanpk1222@gmail.com</span>
+                <p class="text-center font-mono text-gray-400 mb-10 text-lg">
+                    > Initialize communication protocol.<br>
+                    > Direct terminal access: <span class="text-cyber-cyan">+91 9989528718</span> | <span class="text-cyber-cyan">pavanpk1222@gmail.com</span>
                 </p>
                 
-                <form action="https://formsubmit.co/pavanpk1222@gmail.com" method="POST" class="space-y-6 relative z-10 font-mono">
+                <form action="https://formsubmit.co/pavanpk1222@gmail.com" method="POST" class="space-y-8 relative z-10 font-mono text-lg">
                     <input type="hidden" name="_captcha" value="false">
-                    <div class="flex flex-col md:flex-row gap-6">
-                        <input type="text" name="name" required placeholder="name_var" class="w-full md:w-1/2 bg-[#0d0d0d] border border-cyber-green/40 px-4 py-3 text-white placeholder-gray-600 focus:border-cyber-green focus:ring-1 focus:ring-cyber-green focus:outline-none transition-colors text-sm">
+                    <div class="flex flex-col md:flex-row gap-8">
+                        <input type="text" name="name" required placeholder="[input_name]" class="w-full md:w-1/2 bg-[#0a0a0a] border border-cyber-green/40 px-6 py-4 text-white placeholder-gray-600 focus:border-cyber-green focus:ring-2 focus:ring-cyber-green focus:outline-none transition-all shadow-inner">
                         
-                        <input type="email" name="email" required placeholder="email_address" class="w-full md:w-1/2 bg-[#0d0d0d] border border-cyber-green/40 px-4 py-3 text-white placeholder-gray-600 focus:border-cyber-green focus:ring-1 focus:ring-cyber-green focus:outline-none transition-colors text-sm">
+                        <input type="email" name="email" required placeholder="[input_email]" class="w-full md:w-1/2 bg-[#0a0a0a] border border-cyber-green/40 px-6 py-4 text-white placeholder-gray-600 focus:border-cyber-green focus:ring-2 focus:ring-cyber-green focus:outline-none transition-all shadow-inner">
                     </div>
                     
-                    <textarea name="message" required rows="5" placeholder="Enter message payload..." class="w-full bg-[#0d0d0d] border border-cyber-green/40 px-4 py-3 text-white placeholder-gray-600 focus:border-cyber-green focus:ring-1 focus:ring-cyber-green focus:outline-none transition-colors text-sm"></textarea>
+                    <textarea name="message" required rows="6" placeholder="[enter_payload_data...]" class="w-full bg-[#0a0a0a] border border-cyber-green/40 px-6 py-4 text-white placeholder-gray-600 focus:border-cyber-green focus:ring-2 focus:ring-cyber-green focus:outline-none transition-all shadow-inner"></textarea>
                     
-                    <button type="submit" class="w-full bg-cyber-green/10 border border-cyber-green text-cyber-green hover:bg-cyber-green hover:text-black font-bold py-4 transition-all duration-300">
-                        > SEND_TRANSMISSION
+                    <button type="submit" class="w-full bg-cyber-green/10 border-2 border-cyber-green text-cyber-green hover:bg-cyber-green hover:text-black font-bold py-6 text-xl transition-all duration-300 shadow-[0_0_20px_rgba(0,255,65,0.2)]">
+                        > EXECUTE_TRANSMISSION
                     </button>
                 </form>
             </div>
         </div>
     </section>
 
-    <footer class="py-8 border-t border-cyber-border text-center font-mono text-xs text-gray-600 bg-cyber-bg">
+    <footer class="py-10 border-t border-cyber-border text-center font-mono text-sm text-gray-600 bg-cyber-bg">
         <p>> Designed and built by Pavan Kumar Palika</p>
         <p>> Connection secured.</p>
     </footer>
