@@ -3,215 +3,313 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pavan Kumar Palika | Portfolio</title>
+    <title>Pavan Kumar Palika | Root Access</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cyber: {
+                bg: '#030303',
+                panel: '#0a0a0a',
+                border: '#1a1a1a',
+                green: '#00ff41',
+                cyan: '#00f3ff',
+                dim: '#008f11'
+              }
+            },
+            fontFamily: {
+              mono: ['"Fira Code"', 'monospace'],
+              sans: ['Inter', 'sans-serif']
+            }
+          }
+        }
+      }
+    </script>
     
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.51/build/spline-viewer.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-slate-950 text-slate-300 antialiased overflow-x-hidden relative">
+<body class="bg-cyber-bg text-gray-300 font-sans antialiased overflow-x-hidden selection:bg-cyber-green selection:text-black relative">
 
-    <nav class="fixed w-full z-50 glass top-0 border-b border-slate-800 nav-anim">
+    <canvas id="matrix-bg" class="fixed inset-0 z-0 opacity-20 pointer-events-none"></canvas>
+
+    <nav class="fixed w-full z-50 top-0 border-b border-cyber-green/30 bg-cyber-bg/80 backdrop-blur-md nav-anim">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-white tracking-wider">PPK.</a>
-            <div class="hidden md:flex space-x-10">
-                <a href="#about" class="hover:text-blue-400 transition-colors">About</a>
-                <a href="#skills" class="hover:text-blue-400 transition-colors">Skills</a>
-                <a href="#experience" class="hover:text-blue-400 transition-colors">Experience</a>
-                <a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a>
-                <a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a>
+            <a href="#" class="text-2xl font-mono font-bold text-cyber-green tracking-widest glitch-text" data-text="PPK_SYS">PPK_SYS</a>
+            <div class="hidden md:flex space-x-8 font-mono text-sm">
+                <a href="#about" class="hover:text-cyber-cyan transition-colors duration-300">> About</a>
+                <a href="#skills" class="hover:text-cyber-cyan transition-colors duration-300">> Skills</a>
+                <a href="#experience" class="hover:text-cyber-cyan transition-colors duration-300">> Experience</a>
+                <a href="#projects" class="hover:text-cyber-cyan transition-colors duration-300">> Projects</a>
+                <a href="#contact" class="hover:text-cyber-cyan transition-colors duration-300">> Contact</a>
             </div>
         </div>
     </nav>
 
-    <section class="min-h-screen flex items-center pt-24 relative overflow-hidden" id="home">
-        <div id="particles-js" class="absolute inset-0 z-0 opacity-40"></div>
-        
-        <div class="spline-container">
-            <spline-viewer url="https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode"></spline-viewer>
-        </div>
-
-        <div class="max-w-7xl mx-auto px-6 flex flex-col-reverse md:flex-row items-center gap-16 z-10 w-full relative">
+    <section class="min-h-screen flex items-center pt-24 relative z-10" id="home">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col-reverse md:flex-row items-center gap-16 w-full">
             <div class="flex-1 text-center md:text-left hero-text">
-                <h2 class="text-blue-400 font-semibold tracking-widest uppercase mb-3 block-reveal">Hello, I'm</h2>
-                <h1 class="text-6xl md:text-8xl font-extrabold text-white mb-5 leading-tight block-reveal">Pavan Kumar <span class="gradient-text">Palika</span> [cite: 81]</h1>
-                <h3 class="text-3xl font-light mb-8 text-slate-300 block-reveal">Computer Science Engineering Student [cite: 85]</h3>
-                <p class="text-xl leading-relaxed mb-12 max-w-2xl text-slate-400 block-reveal">
-                    Motivated final-year Computer Science Engineering student[cite: 85]. I have experience in building full-stack web applications [cite: 86], developing APIs, and working with SQL databases[cite: 88].
+                <p class="font-mono text-cyber-cyan mb-4 block-reveal">> SYSTEM.INIT("Hello, World");</p>
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-4 block-reveal font-mono">
+                    Pavan Kumar <br><span class="text-cyber-green glitch-text" data-text="Palika">Palika</span>
+                </h1>
+                <h3 class="text-2xl font-light mb-8 text-gray-400 block-reveal border-l-2 border-cyber-cyan pl-4">Full-Stack SDE & Sec Analyst</h3>
+                <p class="text-lg leading-relaxed mb-10 max-w-2xl text-gray-500 block-reveal">
+                    Final-year CS Engineering student bridging the gap between scalable web applications and system security. Specializing in MERN, Django, and vulnerability mitigation.
                 </p>
-                <div class="flex justify-center md:justify-start space-x-6 block-reveal">
-                    <a href="#contact" class="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white px-10 py-4 rounded-full font-bold transition-all shadow-[0_0_30px_rgba(37,99,235,0.5)] transform hover:scale-[1.03]">Get In Touch</a>
-                    <a href="https://github.com/Pavan1222-dev" target="_blank" class="border border-slate-600 hover:border-slate-300 hover:bg-slate-800 text-white px-10 py-4 rounded-full font-semibold transition-all"><i class="fab fa-github mr-2"></i>GitHub [cite: 82]</a>
+                <div class="flex justify-center md:justify-start space-x-6 block-reveal font-mono">
+                    <a href="#contact" class="bg-cyber-green/10 border border-cyber-green text-cyber-green hover:bg-cyber-green hover:text-black px-8 py-3 transition-all duration-300 shadow-[0_0_15px_rgba(0,255,65,0.3)]">Execute::Contact</a>
+                    <a href="https://github.com/Pavan1222-dev" target="_blank" class="border border-cyber-cyan/50 text-cyber-cyan hover:bg-cyber-cyan/10 px-8 py-3 transition-all duration-300"><i class="fab fa-github mr-2"></i>GitHub</a>
                 </div>
             </div>
             <div class="flex-1 flex justify-center md:justify-end hero-img">
-                <div class="relative w-80 h-80 md:w-[450px] md:h-[450px] rounded-full p-2 border-2 border-blue-500/40 hero-ring group">
-                    <img src="portfolio/img.png" alt="Pavan Kumar Palika" class="rounded-full w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <div class="relative w-72 h-72 md:w-96 md:h-96 rounded-none border border-cyber-green p-2 cyber-box-shadow group bg-cyber-panel">
+                    <img src="./img.png" onerror="this.src='https://kommodo.ai/i/gJWkOIO9lTfFQgo07dBG'" alt="Profile" class="w-full h-full object-cover grayscale opacity-80 transition-all duration-500 group-hover:grayscale-0 group-hover:opacity-100 mix-blend-screen">
+                    
+                    <div class="absolute -top-2 -left-2 w-4 h-4 border-t-2 border-l-2 border-cyber-cyan"></div>
+                    <div class="absolute -top-2 -right-2 w-4 h-4 border-t-2 border-r-2 border-cyber-cyan"></div>
+                    <div class="absolute -bottom-2 -left-2 w-4 h-4 border-b-2 border-l-2 border-cyber-cyan"></div>
+                    <div class="absolute -bottom-2 -right-2 w-4 h-4 border-b-2 border-r-2 border-cyber-cyan"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-28 bg-slate-900/50 relative z-10" id="skills">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-5xl font-bold text-white mb-20 text-center section-title">Technical <span class="gradient-text">Skills</span></h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 skill-grid">
-                
-                <div class="glass p-10 rounded-2xl skill-card cursor-pointer">
-                    <i class="fas fa-code text-4xl text-blue-400 mb-6"></i>
-                    <h3 class="text-2xl font-bold text-white mb-6">Languages</h3>
-                    <p class="text-slate-300">Python, C, C++, Java Script, SQL, HTML, CSS, Php, Bash[cite: 155].</p>
+    <section class="py-24 relative z-10 bg-cyber-bg" id="about">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-4xl font-mono font-bold text-white mb-12 flex items-center section-title">
+                <span class="text-cyber-green mr-4">01.</span> <span class="border-b border-cyber-green pb-2">About_Me</span>
+            </h2>
+            <div class="bg-cyber-panel border border-cyber-border p-8 cyber-card">
+                <div class="flex items-center mb-6 border-b border-cyber-border pb-4">
+                    <div class="w-3 h-3 rounded-full bg-red-500 mr-2"></div>
+                    <div class="w-3 h-3 rounded-full bg-yellow-500 mr-2"></div>
+                    <div class="w-3 h-3 rounded-full bg-green-500 mr-4"></div>
+                    <span class="font-mono text-sm text-gray-500">root@ppk-sys:~# cat about.txt</span>
                 </div>
-
-                <div class="glass p-10 rounded-2xl skill-card cursor-pointer">
-                    <i class="fas fa-layer-group text-4xl text-purple-400 mb-6"></i>
-                    <h3 class="text-2xl font-bold text-white mb-6">Frameworks</h3>
-                    <p class="text-slate-300">Django, Express.js, React.js, Node.js, WordPress, Spline[cite: 156].</p>
-                </div>
-
-                <div class="glass p-10 rounded-2xl skill-card cursor-pointer">
-                    <i class="fas fa-cloud text-4xl text-green-400 mb-6"></i>
-                    <h3 class="text-2xl font-bold text-white mb-6">Tools & Cloud</h3>
-                    <p class="text-slate-300">Git, Vs Code, AWS(EC2, S3, IAM, VPC), Linux Command Line, Windows Command Prompt[cite: 157, 158].</p>
-                </div>
-
+                <p class="text-gray-400 leading-relaxed font-mono text-sm md:text-base">
+                    > STATUS: Online <br><br>
+                    > I am a passionate developer who treats software engineering as an art form. My expertise spans building comprehensive architectures using the MERN stack and Django, coupled with a deep interest in cybersecurity and malware removal.<br><br>
+                    > I thrive in terminal environments, optimizing SQL databases, integrating RESTful APIs, and designing UIs that adhere to modern UX standards. Whether I'm building a Collaborative IDE with 0.2ms latency or simulating real-world booking queues, my goal is always performance and precision.<br><br>
+                    > CURRENT_LOCATION: Visakhapatnam, India.<br>
+                    > EDUCATION: B.Tech, Computer Science Engineering (2022-2026).
+                </p>
             </div>
         </div>
     </section>
 
-    <section class="py-28" id="experience">
+    <section class="py-24 relative z-10" id="skills">
         <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-5xl font-bold text-white mb-20 text-center section-title">Professional <span class="gradient-text">Journey</span></h2>
+            <h2 class="text-4xl font-mono font-bold text-white mb-16 flex items-center section-title">
+                <span class="text-cyber-green mr-4">02.</span> <span class="border-b border-cyber-green pb-2">Tech_Arsenal</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 skill-grid">
+                
+                <div class="bg-cyber-panel border border-cyber-border p-8 cyber-card hover:border-cyber-cyan transition-colors">
+                    <i class="fas fa-terminal text-3xl text-cyber-cyan mb-6"></i>
+                    <h3 class="text-xl font-bold text-white mb-4 font-mono">Languages</h3>
+                    <div class="flex flex-wrap gap-2 font-mono text-xs text-cyber-green">
+                        <span class="px-2 py-1 bg-cyber-green/10 border border-cyber-green/30">Python</span>
+                        <span class="px-2 py-1 bg-cyber-green/10 border border-cyber-green/30">C++</span>
+                        <span class="px-2 py-1 bg-cyber-green/10 border border-cyber-green/30">JavaScript</span>
+                        <span class="px-2 py-1 bg-cyber-green/10 border border-cyber-green/30">SQL</span>
+                        <span class="px-2 py-1 bg-cyber-green/10 border border-cyber-green/30">PHP</span>
+                        <span class="px-2 py-1 bg-cyber-green/10 border border-cyber-green/30">Bash</span>
+                    </div>
+                </div>
+
+                <div class="bg-cyber-panel border border-cyber-border p-8 cyber-card hover:border-cyber-cyan transition-colors">
+                    <i class="fas fa-network-wired text-3xl text-cyber-cyan mb-6"></i>
+                    <h3 class="text-xl font-bold text-white mb-4 font-mono">Frameworks</h3>
+                    <div class="flex flex-wrap gap-2 font-mono text-xs text-cyber-green">
+                        <span class="px-2 py-1 bg-cyber-green/10 border border-cyber-green/30">MERN Stack</span>
+                        <span class="px-2 py-1 bg-cyber-green/10 border border-cyber-green/30">Django</span>
+                        <span class="px-2 py-1 bg-cyber-green/10 border border-cyber-green/30">Electron.js</span>
+                        <span class="px-2 py-1 bg-cyber-green/10 border border-cyber-green/30">WordPress</span>
+                    </div>
+                </div>
+
+                <div class="bg-cyber-panel border border-cyber-border p-8 cyber-card hover:border-cyber-cyan transition-colors">
+                    <i class="fas fa-shield-alt text-3xl text-cyber-cyan mb-6"></i>
+                    <h3 class="text-xl font-bold text-white mb-4 font-mono">Tools & Sec</h3>
+                    <div class="flex flex-wrap gap-2 font-mono text-xs text-cyber-green">
+                        <span class="px-2 py-1 bg-cyber-green/10 border border-cyber-green/30">Git</span>
+                        <span class="px-2 py-1 bg-cyber-green/10 border border-cyber-green/30">AWS Cloud</span>
+                        <span class="px-2 py-1 bg-cyber-green/10 border border-cyber-green/30">Linux CLI</span>
+                        <span class="px-2 py-1 bg-cyber-green/10 border border-cyber-green/30">RESTful APIs</span>
+                        <span class="px-2 py-1 bg-cyber-green/10 border border-cyber-green/30">Vulnerability Testing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 relative z-10 bg-cyber-bg" id="experience">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-4xl font-mono font-bold text-white mb-16 flex items-center section-title">
+                <span class="text-cyber-green mr-4">03.</span> <span class="border-b border-cyber-green pb-2">Execution_Log</span>
+            </h2>
             
-            <div class="relative border-l-2 border-slate-700 ml-4 md:ml-10 space-y-16 exp-timeline">
+            <div class="relative border-l border-cyber-border ml-4 md:ml-8 space-y-12 exp-timeline">
                 
-                <div class="relative pl-10 exp-item">
-                    <div class="absolute -left-[11px] top-1 w-5 h-5 bg-blue-500 rounded-full shadow-[0_0_15px_rgba(59,130,246,0.6)]"></div>
-                    <div class="flex flex-col md:flex-row md:justify-between mb-4">
-                        <div>
-                            <h3 class="text-2xl font-bold text-white">Project Sales Corporation [cite: 93]</h3>
-                            <span class="text-slate-400 text-lg">Jr. SDE & Web Security (intern) [cite: 94]</span>
-                        </div>
-                        <span class="text-blue-400 font-semibold tracking-wide">06/2025 - Present [cite: 96]</span>
-                    </div>
-                    <ul class="text-slate-300 list-disc list-inside space-y-2 text-lg">
-                        <li>Developed a Real-Time CRM desktop application with visualized data dashboard and Auto Scraping[cite: 97].</li>
-                        <li>Removed Malwares and backdoors of attacked Php based WordPress websites[cite: 98].</li>
-                        <li>Supported cloud redeployment efforts and configured server firewalls[cite: 99].</li>
+                <div class="relative pl-8 exp-item">
+                    <div class="absolute -left-[5px] top-1 w-2 h-2 bg-cyber-green shadow-[0_0_10px_#00ff41]"></div>
+                    <span class="font-mono text-sm text-cyber-cyan">06/2025 - Present</span>
+                    <h3 class="text-2xl font-bold text-white mt-2">Project Sales Corporation</h3>
+                    <p class="text-gray-500 mb-4 font-mono text-sm">> Jr. SDE & Web Security Intern</p>
+                    <ul class="text-gray-400 space-y-2 text-sm border-l border-cyber-border/50 pl-4">
+                        <li>Developed Real-Time CRM desktop application with visualized data dashboards.</li>
+                        <li>Purged malwares and backdoors from compromised WordPress websites resulting from SQL injections.</li>
+                        <li>Configured server firewalls and executed manual vulnerability testing.</li>
                     </ul>
                 </div>
 
-                <div class="relative pl-10 exp-item">
-                    <div class="absolute -left-[11px] top-1 w-5 h-5 bg-purple-500 rounded-full shadow-[0_0_15px_rgba(168,85,247,0.6)]"></div>
-                    <div class="flex flex-col md:flex-row md:justify-between mb-4">
-                        <div>
-                            <h3 class="text-2xl font-bold text-white">UptoSkills [cite: 100]</h3>
-                            <span class="text-slate-400 text-lg">Full Stack Web Developer MERN stack [cite: 101]</span>
-                        </div>
-                        <span class="text-purple-400 font-semibold tracking-wide">06/2025 - 09/2025 [cite: 103]</span>
-                    </div>
-                    <ul class="text-slate-300 list-disc list-inside space-y-2 text-lg">
-                        <li>Heading development of an HRMS portal for employees and HR[cite: 104].</li>
-                        <li>Implemented Safe and secure employee dedicated communication with SHA-256 and SQL[cite: 105].</li>
-                        <li>Developed and integrated RESTful APIs to handle GET and POST requests[cite: 106].</li>
+                <div class="relative pl-8 exp-item">
+                    <div class="absolute -left-[5px] top-1 w-2 h-2 bg-cyber-green shadow-[0_0_10px_#00ff41]"></div>
+                    <span class="font-mono text-sm text-cyber-cyan">06/2025 - 09/2025</span>
+                    <h3 class="text-2xl font-bold text-white mt-2">UptoSkills</h3>
+                    <p class="text-gray-500 mb-4 font-mono text-sm">> Full Stack Web Developer (MERN)</p>
+                    <ul class="text-gray-400 space-y-2 text-sm border-l border-cyber-border/50 pl-4">
+                        <li>Headed development of a comprehensive HRMS portal.</li>
+                        <li>Implemented secure employee communication with SHA-256 end-to-end encryption.</li>
+                        <li>Engineered and integrated RESTful APIs to handle high-efficiency data requests.</li>
                     </ul>
                 </div>
 
-                <div class="relative pl-10 exp-item">
-                    <div class="absolute -left-[11px] top-1 w-5 h-5 bg-green-500 rounded-full shadow-[0_0_15px_rgba(34,197,94,0.6)]"></div>
-                    <div class="flex flex-col md:flex-row md:justify-between mb-4">
-                        <div>
-                            <h3 class="text-2xl font-bold text-white">Avishkar Tech Solutions [cite: 108]</h3>
-                            <span class="text-slate-400 text-lg">Full Stack Web Developer Python-Django [cite: 109]</span>
-                        </div>
-                        <span class="text-green-400 font-semibold tracking-wide">04/2024 - 10/2024 [cite: 111]</span>
-                    </div>
-                    <ul class="text-slate-300 list-disc list-inside space-y-2 text-lg">
-                        <li>Engineered a mock railway ticket reservation system to test booking workflows[cite: 112].</li>
-                        <li>Deployed the web application online with PythonAnywhere[cite: 113].</li>
-                        <li>Guided Co-interns and handled live project problems[cite: 114].</li>
+                <div class="relative pl-8 exp-item">
+                    <div class="absolute -left-[5px] top-1 w-2 h-2 bg-cyber-green shadow-[0_0_10px_#00ff41]"></div>
+                    <span class="font-mono text-sm text-cyber-cyan">04/2024 - 10/2024</span>
+                    <h3 class="text-2xl font-bold text-white mt-2">Avishkar Tech Solutions</h3>
+                    <p class="text-gray-500 mb-4 font-mono text-sm">> Full Stack Django Web Developer</p>
+                    <ul class="text-gray-400 space-y-2 text-sm border-l border-cyber-border/50 pl-4">
+                        <li>Engineered a mock railway ticket reservation system to test queue and database interactions.</li>
+                        <li>Deployed applications online adhering to high security standards.</li>
+                        <li>Guided co-interns through technical challenges and live project bug fixes.</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-28 bg-slate-900/50 relative z-10" id="projects">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-5xl font-bold text-white mb-20 text-center section-title">Featured <span class="gradient-text">Projects</span></h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 project-grid">
+    <section class="py-24 relative z-10" id="projects">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-mono font-bold text-white mb-16 flex items-center section-title">
+                <span class="text-cyber-green mr-4">04.</span> <span class="border-b border-cyber-green pb-2">Compiled_Binaries</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 project-grid">
                 
-                <div class="glass p-10 rounded-2xl project-card cursor-pointer">
-                    <div class="flex justify-between items-start border-b border-slate-700 pb-5 mb-6">
-                        <h3 class="text-2xl font-bold text-white">CRM & Invoice Tracking [cite: 125]</h3>
-                        <i class="fas fa-chart-line text-3xl text-blue-400"></i>
+                <div class="bg-cyber-panel border border-cyber-border p-8 cyber-card group hover:-translate-y-2 transition-transform">
+                    <div class="flex justify-between items-start mb-6">
+                        <i class="far fa-folder-open text-4xl text-cyber-cyan"></i>
+                        <div class="flex space-x-3 text-gray-500">
+                            <i class="fab fa-github hover:text-cyber-green cursor-pointer transition-colors"></i>
+                            <i class="fas fa-external-link-alt hover:text-cyber-green cursor-pointer transition-colors"></i>
+                        </div>
                     </div>
-                    <ul class="text-slate-300 space-y-3 mb-6 text-lg list-disc list-inside">
-                        <li>Developed utilizing React and Electron.js, integrated with a remote SQL database[cite: 126].</li>
-                        <li>Included Autoscraping for client leads with AI Scoring[cite: 127].</li>
-                    </ul>
+                    <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-cyber-green transition-colors font-mono">Co-Lab IDE</h3>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                        A collaborative IDE enabling secure team coding environments. Implemented code synchronization protocols achieving sub-0.2ms latency using a local-first (a=0.8) and cloud (b=0.2) hybrid architecture.
+                    </p>
+                    <div class="font-mono text-xs text-cyber-cyan flex space-x-3">
+                        <span>Tauri-React</span>
+                        <span>Firebase</span>
+                    </div>
                 </div>
 
-                <div class="glass p-10 rounded-2xl project-card cursor-pointer">
-                    <div class="flex justify-between items-start border-b border-slate-700 pb-5 mb-6">
-                        <h3 class="text-2xl font-bold text-white">HRMS (MERN) [cite: 129]</h3>
-                        <i class="fas fa-users-cog text-3xl text-purple-400"></i>
+                <div class="bg-cyber-panel border border-cyber-border p-8 cyber-card group hover:-translate-y-2 transition-transform">
+                    <div class="flex justify-between items-start mb-6">
+                        <i class="far fa-folder-open text-4xl text-cyber-cyan"></i>
+                        <div class="flex space-x-3 text-gray-500">
+                            <i class="fab fa-github hover:text-cyber-green cursor-pointer transition-colors"></i>
+                        </div>
                     </div>
-                    <ul class="text-slate-300 space-y-3 mb-6 text-lg list-disc list-inside">
-                        <li>Designed end-to-end automation solutions for the HR department[cite: 130].</li>
-                        <li>Developed a real-time chat module to facilitate secure internal employee communication[cite: 131].</li>
-                    </ul>
+                    <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-cyber-green transition-colors font-mono">CRM & Invoice Tracker</h3>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                        Cross-platform desktop application integrating a remote SQL database. Features include automated AI-driven lead scraping, data scoring, and streamlined invoice generation protocols.
+                    </p>
+                    <div class="font-mono text-xs text-cyber-cyan flex space-x-3">
+                        <span>React</span>
+                        <span>Electron.js</span>
+                        <span>SQL</span>
+                    </div>
                 </div>
 
-                <div class="glass p-10 rounded-2xl project-card cursor-pointer">
-                    <div class="flex justify-between items-start border-b border-slate-700 pb-5 mb-6">
-                        <h3 class="text-2xl font-bold text-white">Jira Automation [cite: 132]</h3>
-                        <i class="fab fa-jira text-3xl text-orange-400"></i>
+                <div class="bg-cyber-panel border border-cyber-border p-8 cyber-card group hover:-translate-y-2 transition-transform">
+                    <div class="flex justify-between items-start mb-6">
+                        <i class="far fa-folder-open text-4xl text-cyber-cyan"></i>
+                        <div class="flex space-x-3 text-gray-500">
+                            <i class="fab fa-github hover:text-cyber-green cursor-pointer transition-colors"></i>
+                        </div>
                     </div>
-                    <ul class="text-slate-300 space-y-3 mb-6 text-lg list-disc list-inside">
-                        <li>Developed with next.js and Atlassian resources[cite: 134].</li>
-                        <li>Secure Jira tickets updation automatically based on source commits like GitHub[cite: 135].</li>
-                    </ul>
+                    <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-cyber-green transition-colors font-mono">Jira Automation Unit</h3>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                        Atlassian Hackathon project. Engineered a workflow automation tool that securely links and automatically updates Jira tickets based on source commits from GitHub and Bitbucket.
+                    </p>
+                    <div class="font-mono text-xs text-cyber-cyan flex space-x-3">
+                        <span>Next.js</span>
+                        <span>Atlassian API</span>
+                    </div>
                 </div>
 
-                <div class="glass p-10 rounded-2xl project-card cursor-pointer">
-                    <div class="flex justify-between items-start border-b border-slate-700 pb-5 mb-6">
-                        <h3 class="text-2xl font-bold text-white">Co-Lab IDE [cite: 143]</h3>
-                        <i class="fas fa-laptop-code text-3xl text-green-400"></i>
+                <div class="bg-cyber-panel border border-cyber-border p-8 cyber-card group hover:-translate-y-2 transition-transform">
+                    <div class="flex justify-between items-start mb-6">
+                        <i class="far fa-folder-open text-4xl text-cyber-cyan"></i>
+                        <div class="flex space-x-3 text-gray-500">
+                            <i class="fab fa-github hover:text-cyber-green cursor-pointer transition-colors"></i>
+                        </div>
                     </div>
-                    <ul class="text-slate-300 space-y-3 mb-6 text-lg list-disc list-inside">
-                        <li>Perfect code sync feature automatically updates with low latency of 0.2ms[cite: 145].</li>
-                        <li>Local first architecture with a=0.8 and cloud-based data perfection with b=0.2[cite: 146].</li>
-                    </ul>
+                    <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-cyber-green transition-colors font-mono">HRMS Portal</h3>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                        End-to-end automation for HR processes. Developed a robust real-time chat module to facilitate secure, encrypted internal employee communications and collaboration.
+                    </p>
+                    <div class="font-mono text-xs text-cyber-cyan flex space-x-3">
+                        <span>MongoDB</span>
+                        <span>Express</span>
+                        <span>React</span>
+                    </div>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <section class="py-28" id="contact">
+    <section class="py-24 relative z-10 bg-cyber-bg" id="contact">
         <div class="max-w-4xl mx-auto px-6">
-            <div class="glass p-12 rounded-3xl relative overflow-hidden contact-box">
-                <h2 class="text-5xl font-bold text-white mb-4 text-center">Let's <span class="gradient-text">Connect</span></h2>
-                <p class="text-center text-slate-400 mb-8">+91 9989528718 | pavanpk1222@gmail.com [cite: 82]</p>
-                <form action="https://formsubmit.co/pavanpk1222@gmail.com" method="POST" class="space-y-6">
+            <h2 class="text-4xl font-mono font-bold text-white mb-12 flex items-center justify-center section-title text-center">
+                <span class="text-cyber-green mr-4">05.</span> <span class="border-b border-cyber-green pb-2">Establish_Connection</span>
+            </h2>
+            
+            <div class="bg-cyber-panel border border-cyber-border p-10 cyber-card contact-box relative overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-b from-transparent via-cyber-green/5 to-transparent h-20 w-full animate-scan"></div>
+                
+                <p class="text-center font-mono text-gray-400 mb-8 text-sm">
+                    > Enter parameters below to transmit payload directly to my inbox.<br>
+                    > Or ping directly: <span class="text-cyber-cyan">+91 9989528718</span> | <span class="text-cyber-cyan">pavanpk1222@gmail.com</span>
+                </p>
+                
+                <form action="https://formsubmit.co/pavanpk1222@gmail.com" method="POST" class="space-y-6 relative z-10 font-mono">
                     <input type="hidden" name="_captcha" value="false">
-                    <div class="flex gap-6">
-                        <input type="text" name="name" required placeholder="Name" class="w-1/2 bg-slate-800/80 border border-slate-700 rounded-xl px-6 py-4 text-white focus:border-blue-500 outline-none">
-                        <input type="email" name="email" required placeholder="Email" class="w-1/2 bg-slate-800/80 border border-slate-700 rounded-xl px-6 py-4 text-white focus:border-blue-500 outline-none">
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <input type="text" name="name" required placeholder="name_var" class="w-full md:w-1/2 bg-cyber-bg border border-cyber-border px-4 py-3 text-white focus:border-cyber-green focus:outline-none transition-colors text-sm">
+                        <input type="email" name="email" required placeholder="email_address" class="w-full md:w-1/2 bg-cyber-bg border border-cyber-border px-4 py-3 text-white focus:border-cyber-green focus:outline-none transition-colors text-sm">
                     </div>
-                    <textarea name="message" required rows="5" placeholder="Message" class="w-full bg-slate-800/80 border border-slate-700 rounded-xl px-6 py-4 text-white focus:border-blue-500 outline-none"></textarea>
-                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-5 rounded-xl transition-all">Send Direct Message</button>
+                    <textarea name="message" required rows="5" placeholder="Enter message payload..." class="w-full bg-cyber-bg border border-cyber-border px-4 py-3 text-white focus:border-cyber-green focus:outline-none transition-colors text-sm"></textarea>
+                    <button type="submit" class="w-full bg-cyber-green/10 border border-cyber-green text-cyber-green hover:bg-cyber-green hover:text-black font-bold py-4 transition-all duration-300">
+                        > SEND_TRANSMISSION
+                    </button>
                 </form>
             </div>
         </div>
     </section>
 
-    <footer class="py-12 border-t border-slate-800 text-center relative z-10">
-        <p class="text-slate-500 text-sm mb-6">&copy; 2026 Pavan Kumar Palika[cite: 81].</p>
+    <footer class="py-8 border-t border-cyber-border text-center font-mono text-xs text-gray-600 bg-cyber-bg">
+        <p>> Designed and built by Pavan Kumar Palika</p>
+        <p>> Connection secured.</p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>

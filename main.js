@@ -1,95 +1,76 @@
-// Register GSAP ScrollTrigger
-gsap.registerPlugin(ScrollTrigger);
+document.addEventListener("DOMContentLoaded", () => {
+    // Register GSAP ScrollTrigger
+    gsap.registerPlugin(ScrollTrigger);
 
-// 1. Initial Page Load Animation (Hero Section)
-const heroTl = gsap.timeline();
-
-// Fade down the nav bar
-heroTl.from('.nav-anim', {
-    y: -100,
-    opacity: 0,
-    duration: 1,
-    ease: "power4.out"
-});
-
-// Stagger reveal the text blocks
-heroTl.from('.block-reveal', {
-    y: 50,
-    opacity: 0,
-    duration: 0.8,
-    stagger: 0.15,
-    ease: "back.out(1.7)"
-}, "-=0.5");
-
-// Pop in the profile image
-heroTl.from('.hero-img', {
-    scale: 0.8,
-    opacity: 0,
-    duration: 1.2,
-    ease: "elastic.out(1, 0.5)"
-}, "-=0.8");
-
-// 2. Scroll Animations (Skills Section)
-gsap.from('.skill-card', {
-    scrollTrigger: {
-        trigger: '.skill-grid',
-        start: "top 80%",
-    },
-    y: 80,
-    opacity: 0,
-    duration: 0.8,
-    stagger: 0.15,
-    ease: "back.out(1.2)"
-});
-
-// 3. Scroll Animations (Experience Timeline)
-gsap.from('.exp-item', {
-    scrollTrigger: {
-        trigger: '.exp-timeline',
-        start: "top 80%",
-    },
-    x: -50,
-    opacity: 0,
-    duration: 0.8,
-    stagger: 0.3,
-    ease: "power3.out"
-});
-
-// 4. Scroll Animations (Projects Section)
-gsap.from('.project-card', {
-    scrollTrigger: {
-        trigger: '.project-grid',
-        start: "top 75%",
-    },
-    y: 100,
-    opacity: 0,
-    duration: 0.8,
-    stagger: 0.2,
-    ease: "back.out(1.2)"
-});
-
-// 5. Scroll Animation (Contact Form)
-gsap.from('.contact-box', {
-    scrollTrigger: {
-        trigger: '#contact',
-        start: "top 80%",
-    },
-    scale: 0.9,
-    y: 50,
-    opacity: 0,
-    duration: 1,
-    ease: "power4.out"
-});
-
-// 6. Subtle Floating Mouse Effect for Hero Image
-document.addEventListener("mousemove", (e) => {
-    const x = (window.innerWidth / 2 - e.pageX) / 50;
-    const y = (window.innerHeight / 2 - e.pageY) / 50;
+    // 1. Matrix Digital Rain Effect for Background
+    const canvas = document.getElementById('matrix-bg');
+    const ctx = canvas.getContext('2d');
     
-    gsap.to('.hero-img', {
-        x: x,
-        y: y,
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    
+    const letters = '01ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const fontSize = 14;
+    const columns = canvas.width / fontSize;
+    const drops = [];
+    for (let x = 0; x < columns; x++) drops[x] = 1;
+    
+    function drawMatrix() {
+        ctx.fillStyle = 'rgba(3, 3, 3, 0.05)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        
+        ctx.fillStyle = '#0F0'; 
+        ctx.font = fontSize + 'px monospace';
+        
+        for (let i = 0; i < drops.length; i++) {
+            const text = letters.charAt(Math.floor(Math.random() * letters.length));
+            ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+            
+            if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                drops[i] = 0;
+            }
+            drops[i]++;
+        }
+    }
+    setInterval(drawMatrix, 50);
+
+    // 2. Initial Page Load Animation (Hero Section)
+    const heroTl = gsap.timeline();
+
+    heroTl.from('.nav-anim', { y: -50, opacity: 0, duration: 1, ease: "power3.out" })
+          .from('.block-reveal', { y: 30, opacity: 0, duration: 0.6, stagger: 0.1, ease: "power2.out" }, "-=0.5")
+          .from('.hero-img', { scale: 0.9, opacity: 0, filter: "blur(10px)", duration: 1, ease: "power3.out" }, "-=0.6");
+
+    // 3. Reusable ScrollTrigger function to prevent empty sections
+    const animateSection = (triggerClass, yOffset) => {
+        gsap.from(triggerClass, {
+            scrollTrigger: {
+                trigger: triggerClass,
+                start: "top 85%", // Triggers when top of element hits 85% of viewport
+                toggleActions: "play none none none" // Plays once
+            },
+            y: yOffset,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.15,
+            ease: "power2.out"
+        });
+    };
+
+    // Initialize Scroll Animations
+    animateSection('.section-title', 30);
+    animateSection('.cyber-card', 50);
+    animateSection('.exp-item', 30);
+    
+    // Contact Box specific animation
+    gsap.from('.contact-box', {
+        scrollTrigger: {
+            trigger: '#contact',
+            start: "top 80%",
+        },
+        scale: 0.95,
+        opacity: 0,
         duration: 1,
-        ease: "power1.out"
+        ease: "power3.out"
     });
 });
