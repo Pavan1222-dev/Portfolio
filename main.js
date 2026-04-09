@@ -98,14 +98,12 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.from('.contact-box', {
         scrollTrigger: {
             trigger: '#contact',
-            start: "top 80%",
+            start: "top 95%", // Triggers way earlier to guarantee it never stays hidden
+            toggleActions: "play none none none"
         },
-        scale: 0.8,
-        y: 100,
+        y: 50,
         opacity: 0,
-        rotationX: -15,
-        transformPerspective: 1000,
-        duration: 1.5,
-        ease: "elastic.out(1, 0.7)"
+        duration: 1,
+        ease: "power3.out"
     });
 });
