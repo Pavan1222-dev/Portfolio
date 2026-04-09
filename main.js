@@ -29,19 +29,33 @@ heroTl.from('.hero-img', {
     ease: "elastic.out(1, 0.5)"
 }, "-=0.8");
 
-// 2. Scroll Animations (Projects Section)
-gsap.from('.section-title', {
+// 2. Scroll Animations (Skills Section)
+gsap.from('.skill-card', {
     scrollTrigger: {
-        trigger: '#projects',
+        trigger: '.skill-grid',
         start: "top 80%",
     },
-    y: 50,
+    y: 80,
     opacity: 0,
-    duration: 1,
+    duration: 0.8,
+    stagger: 0.15,
+    ease: "back.out(1.2)"
+});
+
+// 3. Scroll Animations (Experience Timeline)
+gsap.from('.exp-item', {
+    scrollTrigger: {
+        trigger: '.exp-timeline',
+        start: "top 80%",
+    },
+    x: -50,
+    opacity: 0,
+    duration: 0.8,
+    stagger: 0.3,
     ease: "power3.out"
 });
 
-// Stagger the project cards when scrolling into view
+// 4. Scroll Animations (Projects Section)
 gsap.from('.project-card', {
     scrollTrigger: {
         trigger: '.project-grid',
@@ -54,7 +68,7 @@ gsap.from('.project-card', {
     ease: "back.out(1.2)"
 });
 
-// 3. Scroll Animation (Contact Form)
+// 5. Scroll Animation (Contact Form)
 gsap.from('.contact-box', {
     scrollTrigger: {
         trigger: '#contact',
@@ -67,7 +81,7 @@ gsap.from('.contact-box', {
     ease: "power4.out"
 });
 
-// 4. Subtle Floating Mouse Effect for Hero
+// 6. Subtle Floating Mouse Effect for Hero Image
 document.addEventListener("mousemove", (e) => {
     const x = (window.innerWidth / 2 - e.pageX) / 50;
     const y = (window.innerHeight / 2 - e.pageY) / 50;

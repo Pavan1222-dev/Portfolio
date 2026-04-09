@@ -13,11 +13,11 @@ body {
 }
 
 /* Hover FX for Cards */
-.project-card {
+.project-card, .skill-card {
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.project-card:hover {
+.project-card:hover, .skill-card:hover {
     transform: translateY(-10px) scale(1.02);
     border-color: rgba(96, 165, 250, 0.4);
     box-shadow: 0 20px 40px -10px rgba(59, 130, 246, 0.2);
