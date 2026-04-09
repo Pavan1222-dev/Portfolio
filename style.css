@@ -127,3 +127,16 @@ body {
 .animate-scan {
     animation: scan 3s linear infinite;
 }
+
+/* --- NEW: CYBER IMAGE CENSOR & REVEAL EFFECT --- */
+.cyber-glitch-img {
+    filter: blur(6px) grayscale(100%) contrast(120%);
+    transform: scale(1.05); /* Prevents blurred edges from showing background */
+    opacity: 0.6;
+}
+
+.group:hover .cyber-glitch-img {
+    filter: blur(0px) grayscale(0%) contrast(100%);
+    transform: scale(1);
+    opacity: 1;
+}

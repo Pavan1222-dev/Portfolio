@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
           .from('.block-reveal', { y: 50, scale: 0.8, opacity: 0, duration: 1, stagger: 0.15, ease: "elastic.out(1, 0.7)" }, "-=0.8")
           .from('.hero-img', { scale: 0.5, rotationY: 45, opacity: 0, filter: "blur(20px)", duration: 1.5, ease: "power3.out" }, "-=1");
 
-    // 3D Tilt (Only for elements that have .tilt-card)
+    // 3D Tilt (For standard tilt cards)
     const tiltCards = document.querySelectorAll('.tilt-card');
     tiltCards.forEach(card => {
         card.addEventListener('mousemove', e => {
@@ -77,6 +77,53 @@ document.addEventListener("DOMContentLoaded", () => {
     animateSection('.cyber-card', 100);
     animateSection('.exp-item', 60);
     
-    // NOTE: The Contact Form GSAP ScrollTrigger has been intentionally completely removed. 
-    // This ensures the form loads natively in HTML CSS and will never get stuck invisible.
+    // CONTACT FORM VISIBILITY FIX
+    gsap.from('.contact-box', {
+        scrollTrigger: {
+            trigger: '#contact',
+            start: "top 95%", 
+            toggleActions: "play none none none"
+        },
+        y: 50,
+        opacity: 0,
+        duration: 1,
+        ease: "power3.out"
+    });
+
+    // --- NEW: MAGNETIC MOUSE FOLLOW FOR HERO IMAGE ---
+    const heroImgContainer = document.querySelector('.magnetic-box');
+    const heroSection = document.getElementById('home');
+
+    if (heroImgContainer && heroSection) {
+        heroSection.addEventListener('mousemove', (e) => {
+            const rect = heroSection.getBoundingClientRect();
+            const centerX = rect.left + rect.width / 2;
+            const centerY = rect.top + rect.height / 2;
+            
+            // Normalize coordinates (-1 to 1)
+            const moveX = (e.clientX - centerX) / (rect.width / 2);
+            const moveY = (e.clientY - centerY) / (rect.height / 2);
+            
+            gsap.to(heroImgContainer, {
+                x: moveX * 25, 
+                y: moveY * 25,
+                rotationY: moveX * 12,
+                rotationX: -moveY * 12,
+                transformPerspective: 1000,
+                ease: "power2.out",
+                duration: 0.5
+            });
+        });
+
+        heroSection.addEventListener('mouseleave', () => {
+            gsap.to(heroImgContainer, {
+                x: 0,
+                y: 0,
+                rotationY: 0,
+                rotationX: 0,
+                ease: "elastic.out(1, 0.4)",
+                duration: 1
+            });
+        });
+    }
 });
