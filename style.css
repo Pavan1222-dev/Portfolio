@@ -14,6 +14,20 @@ body {
     background: #00ff41;
 }
 
+/* Global Flashlight Style */
+#flashlight {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0, 243, 255, 0.05) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+}
+
 .nav-link {
     position: relative;
     display: inline-block;
@@ -128,10 +142,9 @@ body {
     animation: scan 3s linear infinite;
 }
 
-/* --- NEW: CYBER IMAGE CENSOR & REVEAL EFFECT --- */
 .cyber-glitch-img {
     filter: blur(6px) grayscale(100%) contrast(120%);
-    transform: scale(1.05); /* Prevents blurred edges from showing background */
+    transform: scale(1.05); 
     opacity: 0.6;
 }
 
