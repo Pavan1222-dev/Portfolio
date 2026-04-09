@@ -2,7 +2,7 @@
 body {
     scrollbar-width: thin;
     scrollbar-color: #00ff41 #050505;
-    perspective: 1000px; /* Required for 3D tilt effect */
+    perspective: 1000px;
 }
 
 ::-webkit-scrollbar {
@@ -59,6 +59,14 @@ body {
 
 .cyber-box-shadow {
     box-shadow: inset 0 0 20px rgba(0, 255, 65, 0.2), 0 0 20px rgba(0, 255, 65, 0.2);
+}
+
+/* Added Image Zoom Class */
+.company-logo-zoom {
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.exp-item:hover .company-logo-zoom {
+    transform: scale(1.15) rotate(2deg);
 }
 
 /* Tooltip Shadow Helper */
